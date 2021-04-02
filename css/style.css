@@ -2399,7 +2399,7 @@ a {
   outline: 0;
 }
 a:hover {
-  color: #303f9f;
+  color: #ff0927;
   text-decoration: underline;
 }
 hr,
@@ -2858,7 +2858,7 @@ hr,
 }
 .footer {
   color: rgba(255, 255, 255, 0.6);
-  background: #303f9f;
+  background: #ff0927;
 }
 .footer p {
   margin: 0;
