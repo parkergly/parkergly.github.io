@@ -2550,7 +2550,7 @@ hr,
   z-index: 70;
   width: 100%;
   height: 3px;
-  background: #7C4DFF;
+  background: #FF5722;
 }
 #loading.active {
   -webkit-animation: loading-anim 1s ease-in-out infinite;
@@ -2991,7 +2991,7 @@ a[title="站长统计"] {
   font-weight: 500;
 }
 .content-header .article-category-list-link {
-  color: #a280ff;
+  color: #ff7e55;
 }
 .post-header .title,
 .post-header .subtitle {
@@ -3120,7 +3120,7 @@ a[title="站长统计"] {
   font: 0.85em Consolas, Monaco, courier, monospace;
 }
 .post-content .gist .gist-meta a {
-  color: #7C4DFF;
+  color: #FF5722;
   font-weight: normal;
 }
 .post-content .gist .gist-meta a:hover {
@@ -3270,10 +3270,10 @@ pre .javascript .function {
   font-size: 120%;
 }
 .article-category-list-link {
-  color: #7C4DFF;
+  color: #FF5722;
 }
 .article-category-list-link:hover {
-  color: #7C4DFF;
+  color: #FF5722;
 }
 .article-tag-list {
   overflow: hidden;
@@ -3385,7 +3385,7 @@ pre .javascript .function {
   line-height: 56px;
   text-align: center;
   color: #fff;
-  background: #7C4DFF;
+  background: #FF5722;
   border-radius: 50%;
   opacity: 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -3841,8 +3841,8 @@ pre .javascript .function {
 }
 .post-content p a,
 .post-content li a {
-  color: #7C4DFF;
-  border-bottom: 1px dotted #c7b3ff;
+  color: #FF5722;
+  border-bottom: 1px dotted #ffa588;
   word-break: break-all;
 }
 .post-content p a:hover,
@@ -3858,7 +3858,7 @@ pre .javascript .function {
   color: #673AB7;
 }
 .post-content strong a {
-  border-color: #7C4DFF;
+  border-color: #FF5722;
 }
 .post-content em {
   color: #757575;
@@ -4002,7 +4002,7 @@ pre .javascript .function {
 }
 .post-content p code,
 .post-content li code {
-  color: #7C4DFF;
+  color: #FF5722;
   line-height: 1;
   margin: 0 4px;
   font-size: 80%;
@@ -4312,7 +4312,7 @@ pre .javascript .function {
   top: 50%;
   padding: 3px 8px;
   color: #fff;
-  background: #7C4DFF;
+  background: #FF5722;
   border-radius: 3px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -4333,7 +4333,7 @@ pre .javascript .function {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 4px solid #7C4DFF;
+  border: 4px solid #FF5722;
   outline: 2px solid #f6f6f6;
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -4453,7 +4453,7 @@ pre .javascript .function {
 }
 .tabs-bar.expand .tags-list .tags-list-item.active {
   color: #fff;
-  background: #7C4DFF;
+  background: #FF5722;
   border-radius: 0.2em;
 }
 .tags-list {
@@ -4496,7 +4496,7 @@ pre .javascript .function {
   color: #fff;
 }
 .tags-list-item.active:after {
-  background: #7C4DFF;
+  background: #FF5722;
 }
 .tags-list-item:hover,
 .tags-list-item:active {
@@ -4874,7 +4874,7 @@ pre .javascript .function {
   border-radius: 4px;
 }
 #comments.vcomment .vheader .vinput:focus {
-  border-bottom: 1px solid #7C4DFF;
+  border-bottom: 1px solid #FF5722;
 }
 #comments.vcomment .vsubmit:active,
 #comments.vcomment .vsubmit:hover {
@@ -4905,10 +4905,10 @@ pre .javascript .function {
 }
 #comments.vcomment .vlist a:hover,
 #comments.vcomment .vlist .vname:hover {
-  color: #7C4DFF;
+  color: #FF5722;
 }
 #comments.vcomment .vlist .vat {
-  color: #7C4DFF;
+  color: #FF5722;
 }
 #comments.vcomment .vcard section {
   border-bottom: 1px solid #dadada;
