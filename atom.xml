@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-05T14:20:30.256Z</updated>
+  <updated>2021-06-05T13:16:07.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,26 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【LeetCode每日题解】20210605</title>
-    <link href="http://example.com/posts/308c58f0/"/>
-    <id>http://example.com/posts/308c58f0/</id>
-    <published>2021-06-05T14:20:30.256Z</published>
-    <updated>2021-06-05T14:20:30.256Z</updated>
-    
-    <content type="html"><![CDATA[<h1><span id="leetcode每日题解20210605">【LeetCode每日题解】20210605</span></h1><h2><span id="每日一题">每日一题</span></h2><h3><span id="203-移除链表元素">203. 移除链表元素</span></h3><p><strong>链接</strong>：<a href="https://leetcode-cn.com/problems/remove-linked-list-elements/">https://leetcode-cn.com/problems/remove-linked-list-elements/</a></p><p><strong>题目</strong>：给你一个链表的头节点 <code>head</code> 和一个整数 <code>val</code> ，请你删除链表中所有满足 <code>Node.val == val</code> 的节点，并返回 <strong>新的头节点</strong> 。</p><p><strong>思路</strong>：移除链表中的节点可以通过递归和迭代的方式求解。</p><p><strong>代码</strong>：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sumNumbers</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> DFS(root,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">DFS</span><span class="params">(TreeNode node, <span class="keyword">int</span> number)</span></span>&#123;</span><br><span class="line">        <span class="comment">//判断递归退出条件</span></span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//构造当前节点的路径和</span></span><br><span class="line">        number = number * <span class="number">10</span> + node.val;</span><br><span class="line">        <span class="comment">//若为叶子节点则加上当前路径和</span></span><br><span class="line">        <span class="keyword">if</span>(node.left == <span class="keyword">null</span> &amp;&amp; node.right == <span class="keyword">null</span>) <span class="keyword">return</span> number;</span><br><span class="line">        <span class="comment">//递归执行</span></span><br><span class="line">        <span class="keyword">return</span> DFS(node.left,number) + DFS(node.right, number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>时间复杂度：$O(N)$</li><li>空间复杂度：$O(1)$</li></ul><script type="math/tex; mode=display">O(N)</script><p><strong>总结：</strong></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1&gt;&lt;span id=&quot;leetcode每日题解20210605&quot;&gt;【LeetCode每日题解】20210605&lt;/span&gt;&lt;/h1&gt;&lt;h2&gt;&lt;span id=&quot;每日一题&quot;&gt;每日一题&lt;/span&gt;&lt;/h2&gt;&lt;h3&gt;&lt;span id=&quot;203-移除链表元素&quot;&gt;203. 移除链</summary>
-      
+    <title></title>
+    <link href="http://example.com/posts/0/"/>
+    <id>http://example.com/posts/0/</id>
+    <published>2021-06-05T14:36:25.185Z</published>
+    <updated>2021-06-05T13:16:07.000Z</updated>
     
     
     
-    <category term="LeetCode每日题解" scheme="http://example.com/categories/LeetCode%E6%AF%8F%E6%97%A5%E9%A2%98%E8%A7%A3/"/>
     
-    
-    <category term="LeetCode每日题解" scheme="http://example.com/tags/LeetCode%E6%AF%8F%E6%97%A5%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
