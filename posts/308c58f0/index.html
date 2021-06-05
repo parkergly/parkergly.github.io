@@ -21,15 +21,15 @@
     
     
     <meta name="keywords" content="LeetCode每日题解">
-    <meta name="description" content="【LeetCode每日题解】20210605每日一题链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-linked-list-elements&#x2F; 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val &#x3D;&#x3D; val 的节点，并返回 新的头节点 。 思路：移除链表中的节点可以通过递归和迭代的方式求解。 代码： 1234">
+    <meta name="description" content="【LeetCode每日题解】20210605【每日一题】203. 移除链表元素链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-linked-list-elements&#x2F; 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val &#x3D;&#x3D; val 的节点，并返回 新的头节点 。 思路：移除链表中的节点可以通过递归和迭代的方">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【LeetCode每日题解】20210605">
 <meta property="og:url" content="http://example.com/posts/308c58f0/index.html">
 <meta property="og:site_name" content="Ashen One">
-<meta property="og:description" content="【LeetCode每日题解】20210605每日一题链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-linked-list-elements&#x2F; 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val &#x3D;&#x3D; val 的节点，并返回 新的头节点 。 思路：移除链表中的节点可以通过递归和迭代的方式求解。 代码： 1234">
+<meta property="og:description" content="【LeetCode每日题解】20210605【每日一题】203. 移除链表元素链接：https:&#x2F;&#x2F;leetcode-cn.com&#x2F;problems&#x2F;remove-linked-list-elements&#x2F; 题目：给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val &#x3D;&#x3D; val 的节点，并返回 新的头节点 。 思路：移除链表中的节点可以通过递归和迭代的方">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-05T14:45:00.625Z">
-<meta property="article:modified_time" content="2021-06-05T14:35:53.000Z">
+<meta property="article:published_time" content="2021-06-05T16:01:20.617Z">
+<meta property="article:modified_time" content="2021-06-05T16:00:50.000Z">
 <meta property="article:author" content="Ashen One">
 <meta property="article:tag" content="LeetCode每日题解">
 <meta name="twitter:card" content="summary">
@@ -138,8 +138,8 @@
         <h1 class="title">【LeetCode每日题解】20210605</h1>
         <h5 class="subtitle">
             
-                <time datetime="2021-06-05T14:45:00.625Z" itemprop="datePublished" class="page-time">
-  2021-06-05
+                <time datetime="2021-06-05T16:01:20.617Z" itemprop="datePublished" class="page-time">
+  2021-06-06
 </time>
 
 
@@ -164,7 +164,7 @@
     <div class="post-card">
         <h1 class="post-card-title">【LeetCode每日题解】20210605</h1>
         <div class="post-meta">
-            <time class="post-time" title="2021-06-05 22:45:00" datetime="2021-06-05T14:45:00.625Z"  itemprop="datePublished">2021-06-05</time>
+            <time class="post-time" title="2021-06-06 00:01:20" datetime="2021-06-05T16:01:20.617Z"  itemprop="datePublished">2021-06-06</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/LeetCode%E6%AF%8F%E6%97%A5%E9%A2%98%E8%A7%A3/">LeetCode每日题解</a></li></ul>
@@ -179,17 +179,44 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1><span id="leetcode每日题解20210605">【LeetCode每日题解】20210605</span></h1><h2><span id="每日一题">每日一题</span></h2><h3><span id="203-移除链表元素"></span></h3><p><strong>链接</strong>：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-linked-list-elements/">https://leetcode-cn.com/problems/remove-linked-list-elements/</a></p>
+            <h1><span id="leetcode每日题解20210605">【LeetCode每日题解】20210605</span></h1><h2><span id="每日一题">【每日一题】</span></h2><h3><span id="203-移除链表元素">203. 移除链表元素</span></h3><p><strong>链接</strong>：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-linked-list-elements/">https://leetcode-cn.com/problems/remove-linked-list-elements/</a></p>
 <p><strong>题目</strong>：给你一个链表的头节点 <code>head</code> 和一个整数 <code>val</code> ，请你删除链表中所有满足 <code>Node.val == val</code> 的节点，并返回 <strong>新的头节点</strong> 。</p>
-<p><strong>思路</strong>：移除链表中的节点可以通过递归和迭代的方式求解。</p>
+<p><strong>思路</strong>：移除链表中的节点可以通过递归和迭代的方式求解。利用<code>dummy</code>节点可以解决头节点被删除的情况。</p>
 <p><strong>代码</strong>：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">sumNumbers</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> DFS(root,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">DFS</span><span class="params">(TreeNode node, <span class="keyword">int</span> number)</span></span>&#123;</span><br><span class="line">        <span class="comment">//判断递归退出条件</span></span><br><span class="line">        <span class="keyword">if</span>(node == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//构造当前节点的路径和</span></span><br><span class="line">        number = number * <span class="number">10</span> + node.val;</span><br><span class="line">        <span class="comment">//若为叶子节点则加上当前路径和</span></span><br><span class="line">        <span class="keyword">if</span>(node.left == <span class="keyword">null</span> &amp;&amp; node.right == <span class="keyword">null</span>) <span class="keyword">return</span> number;</span><br><span class="line">        <span class="comment">//递归执行</span></span><br><span class="line">        <span class="keyword">return</span> DFS(node.left,number) + DFS(node.right, number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>迭代法实现</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">removeElements</span><span class="params">(ListNode head, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        ListNode dummy = <span class="keyword">new</span> ListNode(-<span class="number">1</span>);</span><br><span class="line">        dummy.next = head;</span><br><span class="line">        ListNode currentNode = dummy;</span><br><span class="line">        <span class="keyword">while</span>(currentNode.next!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(currentNode.next.val == val)&#123;</span><br><span class="line">                currentNode.next = currentNode.next.next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> currentNode = currentNode.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>时间复杂度：$O(N)$</li>
 <li>空间复杂度：$O(1)$</li>
 </ul>
+<p><strong>总结：</strong>除了迭代法外，这题还可以通过递归的方式删除链表中的节点。</p>
+<h2><span id="前缀和">【前缀和】</span></h2><h3><span id="1744-你能在你最喜欢的那天吃到你最喜欢的糖果吗">1744. 你能在你最喜欢的那天吃到你最喜欢的糖果吗？</span></h3><p><strong>链接</strong>：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/">https://leetcode-cn.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/</a></p>
+<p><strong>题目</strong>：</p>
+<p>给你一个下标从 <strong>0</strong> 开始的正整数数组 <code>candiesCount</code>，其中 <code>candiesCount[i]</code> 表示你拥有的第<code>i</code>类糖果的数目。同时给你一个二维数组 <code>queries</code> ，其中 <code>queries[i] = [favoriteTypei, favoriteDayi, dailyCapi]</code> 。</p>
+<p>你按照如下规则进行一场游戏：</p>
+<p>你从第 <strong>0</strong> 天开始吃糖果。<br>你在吃完 <strong>所有</strong> 第 <code>i - 1</code> 类糖果之前，<strong>不能</strong> 吃任何一颗第 <code>i</code> 类糖果。<br>在吃完所有糖果之前，你必须每天 <strong>至少</strong> 吃 <strong>一颗</strong> 糖果。<br>请你构建一个布尔型数组 <code>answer</code> ，满足 <code>answer.length == queries.length</code> 。<code>answer[i]</code> 为 <code>true</code>的条件是：在每天吃 <strong>不超过</strong> <code>dailyCapi</code> 颗糖果的前提下，你可以在第 <code>favoriteDayi</code> 天吃到第 <code>favoriteTypei</code> 类糖果；否则 <code>answer[i]</code> 为 <code>false</code> 。注意，只要满足上面 3 条规则中的第二条规则，你就可以在同一天吃不同类型的糖果。</p>
+<p>请你返回得到的数组 <code>answer</code> 。</p>
+<p><strong>思路</strong>：</p>
+<p>要判断是否能在满足<strong>吃糖数量的限制条件</strong>的情况下在<strong>特定日期</strong>吃到<strong>特定种类的糖</strong>，需要利用<strong>吃糖数量的限制</strong>计算出吃到<strong>特定种类糖</strong>的<strong>最早/最晚时间</strong>，再判断特定日期是否在区间内即可。</p>
+<p>首先，为了方便计算，需要预处理出<em>candiesCount</em>的前缀和数组<em>candieSumCount</em>用于表示第<code>i</code>类糖果前所有糖果的数量和。</p>
+<p>其次，要注意题目是从第0天开始吃糖的，我们计算时都是从第一天开始计算的，所以需要把特定时间+1。</p>
+<p>计算吃到第t类糖果的 [最早/最晚] 时间：</p>
+<ul>
+<li><p>最早时间（吃到第一颗<em>favoriteType</em>糖的最早时间）：以最大速率<em>dailyCap</em>吃糖，吃掉<em>favoriteType</em>类之前所有糖果的时间向下取整并加1：</p>
 <script type="math/tex; mode=display">
-O(N)</script><p><strong>总结：</strong></p>
+\lfloor \frac{candiesSumCount[favoriteType]}{dailyCap} \rfloor + 1</script></li>
+<li><p>最晚时间：(吃完最后一颗<em>favoriteType</em>糖的最晚时间)：以最小速率<code>1</code>吃糖，吃掉所有 <em>favoriteType</em>类糖的时间:</p>
+<script type="math/tex; mode=display">
+candiesSumCount[favoriteType+1]</script></li>
+</ul>
+<p><strong>代码</strong>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">boolean</span>[] canEat(<span class="keyword">int</span>[] candiesCount, <span class="keyword">int</span>[][] queries) &#123;</span><br><span class="line">        <span class="keyword">boolean</span>[] answer = <span class="keyword">new</span> <span class="keyword">boolean</span>[queries.length];</span><br><span class="line">        <span class="comment">//前缀和数组，使用long防止溢出</span></span><br><span class="line">        <span class="keyword">long</span>[] candiesSumCount = <span class="keyword">new</span> <span class="keyword">long</span>[candiesCount.length+<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//计算想要吃到指定类型的糖之前需要吃的糖的数量</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= candiesCount.length; i++) &#123;</span><br><span class="line">            candiesSumCount[i] = candiesSumCount[i-<span class="number">1</span>]+candiesCount[i-<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; queries.length; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> favoriteType = queries[i][<span class="number">0</span>];</span><br><span class="line">            <span class="comment">//因为后续计算是从第1天开始的，所以将题目设定的时间加1</span></span><br><span class="line">            <span class="keyword">int</span> favoriteDay = queries[i][<span class="number">1</span>]+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">int</span> dailyCap = queries[i][<span class="number">2</span>];</span><br><span class="line">            <span class="comment">//计算能吃到糖的最早时间=以最大速率吃完前面的糖的时间（向下取整）+1</span></span><br><span class="line">            <span class="keyword">long</span> min = candiesSumCount[favoriteType] / dailyCap + <span class="number">1</span>;</span><br><span class="line">            <span class="comment">//能吃到糖的最晚时间=吃光喜欢的糖需要的时间</span></span><br><span class="line">            <span class="keyword">long</span> max = candiesSumCount[favoriteType+<span class="number">1</span>];</span><br><span class="line">            answer[i] = favoriteDay&gt;=min &amp;&amp; favoriteDay&lt;=max;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>时间复杂度：$O(n+m)$，<code>candiesSum</code>的数组长度为<code>n</code>, <code>queries</code>的数组长度为<code>m</code></li>
+<li>空间复杂度：$O(n)$</li>
+</ul>
 
         </div>
 
@@ -198,7 +225,7 @@ O(N)</script><p><strong>总结：</strong></p>
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2021-06-05T14:35:53.000Z" itemprop="dateUpdated">2021-06-05 22:35:53</time>
+    最后更新时间：<time datetime="2021-06-05T16:00:50.000Z" itemprop="dateUpdated">2021-06-06 00:00:50</time>
 </span><br>
 
 
